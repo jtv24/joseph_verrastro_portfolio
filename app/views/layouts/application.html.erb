@@ -28,9 +28,13 @@
         <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", about_path %></li>
-      </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to about_path, class: 'navbar-brand' do %></li>
+              <div class="menu-text">
+                About
+              </div>
+            <% end %>
+        </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>

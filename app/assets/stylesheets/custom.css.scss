@@ -1,0 +1,51 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+strong {
+    color: white;
+}
+
+
+.head-text {
+    color: #6F79FF;
+    font-family: 'Rock Salt', cursive;
+}
+
+.head-text:hover {
+    color: white;
+    transition: 0.5s;
+    strong {
+        color: #6F79FF;
+        transition: 0.5s;
+    }
+}
+
+.head-logo {
+    float: left;
+    margin-right: 8px;
+    font-size: 40px;
+    margin-top: -10px;
+}
+
+.navbar {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+    background-color: #142847;
+}
+
+.menu-text {
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    color: white;
+}
+
+.menu-text:hover {
+    color: #6F79FF;
+    transition: 0.5s;
+}
