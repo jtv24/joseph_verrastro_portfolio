@@ -16,3 +16,31 @@
  
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+strong {
+    color: white;
+}
+
+
+.head-text {
+    color: #6F79FF;
+    font-family: 'Rock Salt', cursive;
+}
+
+.head-text:hover {
+    color: white;
+    transition: 0.5s;
+    strong {
+        color: #6F79FF;
+        transition: 0.5s;
+    }
+}
+
+.head-logo {
+    float: left;
+    margin-right: 8px;
+    font-size: 40px;
+    margin-top: -10px;
+}
