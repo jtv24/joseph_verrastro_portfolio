@@ -2,9 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#about-header h2{
+#about-header, h1{
     font-size: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rock Salt', 'Montserrat', sans-serif;
+    font-weight: lighter;
 }
 
 #about-img {
@@ -19,4 +20,39 @@ footer {
 
 .copyright {
     border-top: 2px solid lightgrey;
+}
+
+span {
+    font-weight: bold;
+    color: #6F79FF;
+}
+
+#about-me-p {
+    font-family: 'Montserrat', sans-serif, times;
+}
+
+#goals-b {
+    border: 5px solid grey;
+    border-radius: 25%;
+}
+
+#goals-h2 {
+    font-family: 'Montserrat', sans-serif, times;
+    color: #6F79FF;
+}
+
+#about-h3-a{
+    font-family: 'Montserrat', sans-serif, times;
+    color: #403F40;
+    text-decoration: underline;
+}
+
+#about-h3-b {
+    font-family: 'Montserrat', sans-serif, times;
+    color: #6F79FF;
+}
+
+#contact-h2 {
+    font-family: 'Montserrat', sans-serif, times;
+    color: #403F40; 
 }

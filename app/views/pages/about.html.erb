@@ -5,22 +5,76 @@
 </head>
 <body>
     <div class="well">
-        <div class="row text-center">
-            <div class="col-md-4">
-                <div id="about-img">
-                    <img src="https://goo.gl/vmZFJn">
-                </div>
+        
+        <div class="row text-center"><!--row 1-->
+            <h1 id="about-header">An <span>ENTIRE</span> page just about <span>ME</span>!?!?</h1>
+            <br>
+        </div><!--row 1-->
+    
+        <div class="row text-center"><!--row 2-->
+            <div class="col-md-3">
+                <img src="https://goo.gl/SsrGju" class-"img-responsive" alt="My photo">
             </div>
-            <div class="col-md-4">
-                <div id="about-header" class="">
-                    <h2>About Me</h2>
-                </div>
-                <h3>My objective</h3>
-                <p>As you may have guessed it, my name is Joseph Verrastro and I am a new, up-and-coming web developer!
-                 Through the completion of the Full-stack Web Developer Bootcamp by Coder Manual, I have learned many different
-                 languages and skills. Languages that include HTML, CSS, Javascript, jQuery, Ruby, and Ruby on Rails!</p>
+            <div class="col-md-9" id="goals-b">
+                <h2 id="goals-h2">My Goals and Objective!</h2>
+                <br>
+                <p id="about-me-p">My overall <span>objective</span> is to work in an <span>exciting</span> fast-paced environment, 
+                offering opportunities for personal and professional growth, through <span>web development</span> opportunities.
+                My overall goal as a web developer is to continue to learn and adapt to new changes and experiences. I believe
+                that, in order to excel at something as complex as web development, it boils down to two things. <span>First</span>,
+                you need to continue to <span>adapt and learn</span>. <span>Secondly</span>, and I believe most importantly, you need to be <span>passionate</span> about
+                what you do as a web developer! And I know I will continue to be passionate about development and will strive to learn
+                more each and every day!</p>
+            </div>
+        </div><!--row 2-->
+        
+        <div class="row text-center">
+            <div class="col-md-3">
+                <h3 id="about-h3-a">About Me</h3>
+            </div>
+            <div class="col-md-9">
+                <h3 id="about-h3-b">All that I have learned!</h3>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-3">
+                <!--<h2>About Me</h2>-->
+                <p id="about-me-p">As you may have guessed it, my name is <span>Joseph Verrastro</span> and I am a new, up-and-coming web developer!
+                 I <span>completed</span> the <span>Full-stack Web Developer Bootcamp by Coder Manual</span> on November 17,2015 and received my certificate as a full-stack
+                 web developer! During that time I <span>learned</span> many different <span>languages and skills!</span></p>
+            </div>
+            <div class="col-md-9">
+                    <img id="item1" src="http://goo.gl/pE8MZk" class="img-responsive" alt="All languages">
+                    <img id="item2" src="http://goo.gl/Vy3JbN" class="img-responsive" alt="What I know">
+                    <img id="item3" src="http://www.naugatuckymca.org/wp-content/uploads/2015/12/html5-long-1024x287.png" class="img-responsive" alt="HTML5">
+                    <img id="item4" src="http://goo.gl/XKfGx3" class="img-responsive" alt="JavaScript"><!--on-->
+                    <img id="item5" src="http://goo.gl/kiAgHV" class="img-responsive" alt="CSS3"><!--on-->
+                    <img id="item6" src="http://goo.gl/wAzgNG" class="img-responsive" alt="jQuery"><!--on-->
+                    <img id="item7" src="http://goo.gl/eNNtz2" class="img-responsive" alt="Ruby on Rails"><!--on-->
+                    <img id="item8" src="http://goo.gl/pE8MZk" class="img-responsive" alt="All languages">
+            </div>
+        </div>
+            
+        </div>
     </div>
+        
+        <script>
+            var fadeLoop = function($el) {
+                $el.fadeOut(2000, function() {
+                    var $next = $el.next();
+                    if ($next.length == 0) {
+                        $next = $el.siblings(":first");
+                    }
+                    $next.fadeIn(3000, function() {
+                        fadeLoop($next);
+                    });
+                });
+            };
+            
+            $(document).ready(function(){
+                $("#item1").siblings().hide();
+                fadeLoop($("#item1"));
+            });
+        </script>
 </body>
 </html>

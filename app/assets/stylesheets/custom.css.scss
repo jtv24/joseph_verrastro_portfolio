@@ -55,20 +55,11 @@ strong {
     transition: 0.5s;
 }
 
-// #myCarousel {
-//     width: 120%;
-//     padding: 0px;
-//     margin-left: -113px;
-//     margin-top: -20px;
-// }
-
 html, body {
     height: 100%;
 }
 
-.carousel,
-.item,
-.active {
+.carousel, .item, .active {
     height: 100%;
 }
 
@@ -94,10 +85,15 @@ footer {
 
 .skills-imgs, img {
     padding: 3px;
-    border: 2px solid lightgrey;
-    border-radius: 10%;
+    border: 5px solid grey;
+    border-radius: 25%;
 }
 
 #myCarousel {
     border-bottom: 10px solid lightgrey;
+}
+
+
+ul {
+    list-style: none;
 }
