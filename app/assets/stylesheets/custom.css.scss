@@ -67,7 +67,6 @@ html, body {
     height: 100%;
 }
 
-/* Background images are set within the HTML using inline CSS, not here */
 
 .fill {
     width: 100%;
@@ -89,15 +88,14 @@ footer {
     border-radius: 25%;
 }
 
-// #myCarousel {
-//     border-bottom: 10px solid lightgrey;
-// }
-
-
 ul {
     list-style: none;
 }
 
 #home-footer {
     margin-top: -10px;
+}
+
+#welcome-h2 {
+    color: #6F79FF;
 }

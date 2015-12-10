@@ -36,14 +36,17 @@
                 About
               </div>
             <% end %>
+            <li><%= link_to "#", class: 'navbar-brand' do %></li>
+              <div class="menu-text">
+                 Hobbies & Interests
+              </div>
+            <% end %>
             <li><%= link_to new_contact_path, class: 'navbar-brand' do %></li>
               <div class="menu-text">
                 Contact
               </div>
             <% end %>
               <li><a href="https://www.linkedin.com/in/josephverrastro", class: 'navbar-brand', target="_blank">
-                    <!--<div class="head-logo">-->
-                    <!--  <i class="fa fa-linkedin"></i>-->
                     <div class="linked-text">
                       <i class="fa fa-linkedin"></i> LinkedIn
                     </div>
@@ -63,21 +66,22 @@
 
     <div class="carousel-inner">
         <div class="item active">
-            <div class="fill" style="background-image:url('http://goo.gl/EEFTVk');" alt="moon"></div>
+            <div class="fill" style="background-image:url('http://goo.gl/STBEQz');" alt="moon"></div>
             <div class="carousel-caption">
-                <h2>Placeholder Image 1</h2>
+                <h2 id="welcome-h2">WELCOME TO MY SITE!</h2>
+                <p id="welcome-h2">Feel free to look around and see what I'm all about!</p>
             </div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image:url('http://goo.gl/hUz7m2');"></div>
+            <div class="fill" style="background-image:url('http://goo.gl/oEeizQ');"></div>
             <div class="carousel-caption">
-                <h2>Placeholder Image 2</h2>
+                <h2 id="welcome-h2">Check out my Hobbies, Interests and LinkedIn Profile!</h2>
             </div>
         </div>
         <div class="item">
             <div class="fill" style="background-image:url('http://goo.gl/9sVj16');"></div>
             <div class="carousel-caption">
-                <h2>Placeholder Image 3</h2>
+                <h2 id="welcome-h2">Contact me if you're interested!</h2>
             </div>
         </div>
     </div>
@@ -91,7 +95,7 @@
     
     <script>
     $('.carousel').carousel({
-        interval: 5000
+        interval: 7000
     })
     </script>
 
@@ -101,7 +105,7 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-lg-12">
-        <div class="col-md-2">
+        <div class="col-md-3">
           <ul class="nav nav-pills nav-stacked">
             <li><%= link_to about_path do %>About<%end%></li>
           </ul>
@@ -113,7 +117,7 @@
           </div>
         <div class="col-md-2">
           <ul class="nav nav-pills nav-stacked">
-            <li><a href="#">Interests</a></li>
+            <li><a href="#">Hobbies & Interests</a></li>
           </ul>
         </div>
         <div class="col-md-2">
