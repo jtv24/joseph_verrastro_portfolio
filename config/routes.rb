@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/hobbies' => 'pages#hobbies'
   resources :contacts
   get '/about' => 'pages#about'
   root 'pages#home'

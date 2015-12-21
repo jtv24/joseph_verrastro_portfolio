@@ -82,7 +82,7 @@ footer {
     margin: 50px 0;
 }
 
-.skills-imgs, img {
+#profile {
     padding: 3px;
     border: 5px solid grey;
     border-radius: 25%;
@@ -98,4 +98,6 @@ ul {
 
 #welcome-h2 {
     color: #6F79FF;
+    font-weight: bold;
+    text-shadow: 1px 2px black;
 }
