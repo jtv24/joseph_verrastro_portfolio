@@ -56,3 +56,46 @@ span {
     font-family: 'Montserrat', sans-serif, times;
     color: #403F40; 
 }
+
+// #icon-back {
+//     border: 1px red solid;
+// }
+
+#font-logo {
+   position: relative;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #6F79FF;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif, times;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  border-radius: 10%;
+  border: 6px solid lightgrey;
+}
+
+#icons {
+    font-size: 100px;
+}
+
+#icons:hover {
+    font-size: 150px;
+    color: #6F79FF;
+    transition: 1s;
+    opacity: 1;
+    .description {
+        visibility: visible;
+        opacity: 1;
+        transition: 3s;
+    }
+}

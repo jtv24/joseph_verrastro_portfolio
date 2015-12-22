@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Joseph Verrastro</title>
+</head>
+<body>
+  <br>
+        <div class="row">
+            <div class="col-md-12">
+                    <h1 id="about-header" class="text-center">What I <span>love</span> to do!</h1>
+            </div>
+        </div>
+  <br>
+        <div id="icon-back" class="row text-center">
+            <div class="col-md-4">
+              <div id="icons">
+                <i id="font-logo"  class="fa fa-desktop"></i>
+                <p class="description text-center"><br><br>I love working with computers and other technology! From my humble beginnings of learning how to type on a keyboard, to 
+                setting up routers and networks, to my newly found love to writing web dev code, computers and all it intails has been in my blood!</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="icons">
+                <i id="font-logo" id="icons" class="fa fa-futbol-o"></i>
+                <p class="description"><br><br>Throughout my life I always had an interest in sports. I played baseball, basketball and football and was lucky enough to be 
+                a part of two baseball state championship teams! But sports in general are in my DNA! I love to compete!</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="icons">
+                <i id="font-logo" class="fa fa-camera"></i>
+                <p class="description">In recent years I've taken an interest in photography and using Adobe Photoshop for my pictures!I love to put a little artistic spin on even a normal photo! 
+                Through that time I used photoshop to touch up all of my photos. Photoshopping my photos allows my creative juices to flow, and I
+                like to utilize that abilty with my web design and development! Take a look at some of my work below!</p>
+              </div>
+            </div>
+        </div>
+        <div class="well">
+          <div class="row">
+              <div class="col-md-12">
+                <img id="item1" src="http://goo.gl/mvd2ew" class="img-responsive" alt="guitar">
+                <img id="item2" src="http://goo.gl/schFlX" class="img-responsive" alt="rain">
+                <img id="item3" src="http://goo.gl/IbK1rF" class="img-responsive" alt="grasshopper">
+                <img id="item4" src="http://goo.gl/u2VD7G" class="img-responsive" alt="shoes">
+                <img id="item5" src="http://goo.gl/nSbaUA" class="img-responsive" alt="chair">
+                <img id="item6" src="http://goo.gl/KRHJjo" class="img-responsive" alt="baby photo">
+                <img id="item7" src="http://goo.gl/G0kdKm" class="img-responsive" alt="baby shoes">
+              </div>
+          </div>
+        </div>
+        <!--<div id="imgWrap">-->
+        <!--  <i id="icons" class="fa fa-desktop"></i>-->
+        <!--  <p class="imgDescription">This image looks super neat.</p>-->
+        <!--</div>-->
+        <script>
+            var fadeLoop = function(pic) {
+                pic.fadeOut(2000, function() {
+                    var $after = pic.next();
+                    if ($after.length == 0) {
+                        $after = pic.siblings(":first");
+                    }
+                    $after.fadeIn(5000, function() {
+                        fadeLoop($after);
+                    });
+                });
+            };
+            
+            $(document).ready(function(){
+                $("#item1").siblings().hide();
+                fadeLoop($("#item1"));
+            });
+        </script>
+</body>
+</html>
