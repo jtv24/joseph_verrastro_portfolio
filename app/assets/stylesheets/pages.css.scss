@@ -2,6 +2,101 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//ENTIRE APP
+
+footer {
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: -10px;
+}
+
+span {
+    font-weight: bold;
+    color: #6F79FF;
+}
+
+strong {
+    color: white;
+}
+
+.head-text {
+    color: #6F79FF;
+    font-family: 'Rock Salt', cursive;
+}
+
+.head-text:hover {
+    color: white;
+    transition: 0.5s;
+    strong {
+        color: #6F79FF;
+        transition: 0.5s;
+    }
+}
+
+.head-logo {
+    float: left;
+    margin-right: 8px;
+    font-size: 40px;
+    margin-top: -10px;
+}
+
+.navbar {
+    border-bottom: 2px solid lightgrey;
+}
+
+.menu-text {
+    font-family: Josefin Sans;
+    color: white;
+}
+
+.menu-text:hover {
+    color: #6F79FF;
+    transition: 0.5s;
+}
+
+.linked-text {
+    font-family: Josefin Sans;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+}
+
+.linked-text:hover {
+    color: #6F79FF;
+    transition: 0.5s;
+}
+
+// HOME PAGE
+html, body {
+    height: 100%;
+}
+
+.carousel, .item, .active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#welcome-h2 {
+    color: #2C40FF;
+    font-weight: bold;
+    text-shadow: 1px 2px black;
+}
+
+//ABOUT PAGE
+
 #about-header, h1{
     font-size: 35px;
     font-family: 'Rock Salt', 'Montserrat', sans-serif;
@@ -10,30 +105,6 @@
 
 #about-img {
     width: 150%;
-}
-
-footer {
-    border-top: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
-    margin-bottom: -10px;
-}
-
-.copyright {
-    border-top: 2px solid lightgrey;
-}
-
-span {
-    font-weight: bold;
-    color: #6F79FF;
-}
-
-#about-me-p {
-    font-family: 'Montserrat', sans-serif, times;
-}
-
-#goals-h2 {
-    font-family: 'Montserrat', sans-serif, times;
-    color: #6F79FF;
 }
 
 #about-h3-a{
@@ -47,11 +118,29 @@ span {
     color: #6F79FF;
 }
 
+#about-me-p {
+    font-family: 'Montserrat', sans-serif, times;
+}
+
+#goals-h2 {
+    font-family: 'Montserrat', sans-serif, times;
+    color: #6F79FF;
+}
+
+#profile {
+    padding: 3px;
+    border: 5px solid grey;
+    border-radius: 25%;
+}
+
+// CONTACT PAGE
+
 #contact-h2 {
     font-family: 'Montserrat', sans-serif, times;
     color: #403F40; 
 }
 
+// HOBBIES PAGE
 #font-logo {
    position: relative;
 }
