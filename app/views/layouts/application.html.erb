@@ -11,49 +11,36 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse" role="navigation">
-  <div class='container'>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-        <span class="sr-only">Toggle navigation</span>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
       </button>
-        <%= link_to root_path, class: 'navbar-brand' do %>
-          <div class="head-text">
-            <div class="head-logo">
-              <i class="fa fa-smile-o"></i>
-            </div>
-              <strong>Joseph</strong>Verrastro
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        <div class="head-text">
+          <div class="head-logo">
+            <i class="fa fa-smile-o"></i>
           </div>
-        <% end %>
+            <strong>Joseph</strong>Verrastro
+        </div>
+      <% end %>
     </div>
-    <div class="collapse navbar-collapse" id="main-nav-collapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to about_path, class: 'navbar-brand' do %></li>
-              <div class="menu-text">
-                About
-              </div>
-            <% end %>
-            <li><%= link_to hobbies_path, class: 'navbar-brand' do %></li>
-              <div class="menu-text">
-                Hobbies & Interests
-              </div>
-            <% end %>
-            <li><%= link_to new_contact_path, class: 'navbar-brand' do %></li>
-              <div class="menu-text">
-                Contact
-              </div>
-            <% end %>
-            <li><a href="https://www.linkedin.com/in/josephverrastro", class: 'navbar-brand', target="_blank">
-                    <div class="linked-text">
-                      <i class="fa fa-linkedin"></i> LinkedIn
-                    </div>
-                  </a>
-            </li>
-        </ul>
-    </div><!-- /.navbar-collapse -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/hobbies">Hobbies & Interests</a></li>
+        <li><a href="/contacts/new">Contact</a></li> 
+        <li>
+          <a href="https://www.linkedin.com/in/josephverrastro", class: 'navbar-brand', target="_blank">
+            <i class="fa fa-linkedin"></i> LinkedIn
+          </a>
+        </li> 
+      </ul>
+    </div>
   </div>
 </nav>
 
