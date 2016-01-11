@@ -41,6 +41,8 @@ strong {
 }
 
 .navbar {
+    z-index: 1;
+    background-color: transparent;
     border-bottom: 2px solid lightgrey;
 }
 
@@ -81,7 +83,7 @@ html, body {
 }
 
 #myCarousel {
-    top: -20px;
+    top: 0px;
 }
 
 .fill {
