@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -30,7 +30,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li id="nav-color"><a href="/">Home</a></li>
+        <li class="active" id="nav-color"><a href="/">Home</a></li>
         <li id="nav-color"><a href="/about">About</a></li>
         <li id="nav-color"><a href="/hobbies">Hobbies & Interests</a></li>
         <li id="nav-color"><a href="/contacts/new">Contact</a></li> 
@@ -87,31 +87,37 @@
   
   <div class="learn-more">
 		<div class="container">
+		  <div class="row text-center col-md-12">
+		    <h3 id="me">ME, AT A GLANCE!</h3>
+		  </div>
 			<div class="col-md-4">
-				<div id="membership">
-					<h3>Membership</h3>
-					<p>Members of all ages! Sign up today for your Y experience!</p>
-					<p><a href="#">Check out our membership options</a></p>
+				<div>
+					<i id="font-logo"  class="fa fa-desktop"></i>
+					<p>I love working with computers and other technology! From my humble beginnings of learning how to type on a keyboard, to 
+          setting up routers and networks, to my newly found love to writing web dev code, computers and all it intails has been in my blood!</p>
 				</div>
 			</div>
 
 			<div class="col-md-4">
-				<div id="programs">
-					<h3>Programs</h3>
-					<p>Over 50 programs offered for everyone from age 6 months!</p>
-					<p><a href="#">Look at the programs we have to offer!</a></p>
+				<div>
+					<i id="font-logo" class="fa fa-futbol-o"></i>
+					<p class="description">Throughout my life I always had an interest in sports. I played baseball, basketball and football and was lucky enough to be 
+          a part of two baseball state championship teams! But sports in general are in my DNA! I love to compete!</p>
 				</div>
 			</div>
 
 			<div class="col-md-4">
-				<div id="love">
-					<h3>We Love the Y!</h3>
-					<p>The YMCA of Naugatuck is a great place for everything!</p>
-					<p><a href="#">See what people are saying about our Y!</a></p>
+				<div>
+					<i class="fa fa-camera"></i>
+					<p class="description">In recent years I've taken an interest in photography and using Adobe Photoshop for my pictures! I love to put a little artistic spin on even a normal photo! 
+            Through that time I used photoshop to touch up all of my photos. Photoshopping my photos allows my creative juices to flow, and I
+            like to utilize that abilty with my web design and development! Take a look at some of my work</p>
+          <p><a id="here" href="/hobbies">HERE!</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
+	
   
   <script>
   $('.carousel').carousel({
