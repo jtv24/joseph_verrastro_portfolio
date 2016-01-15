@@ -230,7 +230,24 @@ html, body {
 }
 
 // HOBBIES PAGE
-.thumbnail {
-    max-height: 100%;
-    max-width: 100%;
+a:link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif, times;
+    color: #6F79FF;
+}
+
+a:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.img-responsive:hover {
+    border: 2px solid lightgrey;
+    border-radius: 2%;
+}
+
+#photo-p {
+    font-family: Josefin Sans, Arial, cursive;
+    font-weight: bold;
+    font-size: 16px;
 }
