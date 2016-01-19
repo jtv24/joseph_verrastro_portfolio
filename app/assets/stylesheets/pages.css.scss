@@ -31,13 +31,25 @@ strong {
         color: #6F79FF;
         transition: 0.5s;
     }
+    .head-logo img {
+        background-color: white;
+        border-radius: 100%;
+        transition: 0.5s;
+    }
 }
 
-.head-logo {
+.head-logo img {
     float: left;
     margin-right: 8px;
     font-size: 40px;
-    margin-top: -10px;
+    margin-top: -6px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.site-name {
+    margin-left: 40px;
 }
 
 .navbar {
@@ -157,7 +169,7 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #000;
+  background: #6F79FF;
   color: white;
   visibility: hidden;
   opacity: 0;
