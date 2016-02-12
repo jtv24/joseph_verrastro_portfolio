@@ -125,7 +125,16 @@
   <script>
   $('.carousel').carousel({
       interval: 7000
-  })
+  });
+  
+  $(document).ready(function() {
+    $('.item').mouseenter(function() {
+      $('.carousel-caption').fadeTo('slow', 1);
+    });
+    $('.item').mouseleave(function() {
+      $('.carousel-caption').fadeTo('slow', 0);
+    });
+  });
   </script>
   
 <footer>
